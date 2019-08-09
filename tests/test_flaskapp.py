@@ -26,7 +26,8 @@ class FlaskTestCase(unittest.TestCase):
 
     def test_hello(self):
         response = self.app.get('/')
-        self.assertEqual(response, 'Hello World' ,'The welcome message was not Hello World')
+        
+        self.assertEqual(response.data.decode(), 'Hello World!' ,'The welcome message was not Hello World')
 
 if __name__ == '__main__':
     unittest.main()
