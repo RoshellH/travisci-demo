@@ -19,11 +19,7 @@ class FlaskTestCase(unittest.TestCase):
 
 
     # TODO DEFINE TWO MORE TESTS ON THE END POINTS
-    def test_multiply_will_fail(self):
-        response = self.app.get('/multiply?x=5&y=7')
-        resp = json.loads(response.data.decode())
-        self.assertEqual(resp['answer'],38,'Multiply endpoint failed known answer 7*5 = 35')
-
+    
     def test_hello(self):
         response = self.app.get('/')
         
