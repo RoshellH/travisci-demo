@@ -1,6 +1,6 @@
 import unittest,json
 
-from app import app
+from .app import app
 
 class FlaskTestCase(unittest.TestCase):
     def setUp(self):
