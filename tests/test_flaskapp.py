@@ -25,7 +25,7 @@ class FlaskTestCase(unittest.TestCase):
         self.assertEqual(resp['answer'],38,'Multiply endpoint failed known answer 7*5 = 35')
 
     def test_hello(self):
-        response = self.app.get('/hello')
+        response = self.app.get('/')
         self.assertEqual(response, 'Hello World' ,'The welcome message was not Hello World')
 
 if __name__ == '__main__':
